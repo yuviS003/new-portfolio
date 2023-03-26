@@ -18,12 +18,30 @@ const About = () => {
                 me
               </span>
             </div>
-            <div className="font-poppins text-lg font-medium text-[#eee] tracking-tighter">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laudantium, veritatis! Nulla sunt optio facere eaque recusandae
-              dignissimos. Sequi reprehenderit ducimus vitae eius aliquid
-              possimus perspiciatis accusamus dignissimos dolorem, veritatis
-              obcaecati.
+            <div className="flex flex-col">
+              <div className="font-poppins text-8xl font-[800] text-[#eee]">
+                "
+              </div>
+              <div className="font-poppins text-lg font-medium text-[#eee] tracking-tighter -mt-8">
+                Hi! I'm Yuvraj, a software developer with 7+ months of
+                experience in MERN stack and a keen interest in machine
+                learning, open source, and remote work. As an undergrad student,
+                I strive to create user-friendly, efficient, and scalable
+                applications that make a difference. I'm a strong communicator
+                who thrives in remote work environments and always seeking new
+                challenges.
+              </div>
+              <div
+                className="font-poppins text-lg font-bold text-[#eee] tracking-tighter cursor-pointer mt-4 hover:underline hover:underline-offset-8 transition"
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/yuvraj-singh-4ab111156/",
+                    { target: "blank" }
+                  );
+                }}
+              >
+                Let's connect!
+              </div>
             </div>
           </div>
           <div className="flex justify-center items-center min-w-[50%]">
