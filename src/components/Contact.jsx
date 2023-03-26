@@ -18,19 +18,19 @@ const Contact = () => {
           className="w-full object-contain h-[35rem]"
         />
       </div>
-      <div className="flex items-center justify-between flex-col lg:flex-row px-28 py-28 gap-56 lg:gap-5">
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-center h-[20rem] gap-3 z-[10]">
-          <div className="flex flex-col gap-3">
-            <span className="font-poppins text-7xl font-semibold text-[#eee] tracking-tighter">
+      <div className="flex items-center justify-between flex-col lg:flex-row py-16 md:py-28 gap-28 lg:gap-5">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start h-[20rem] gap-3 z-[10] px-16 md:px-28">
+          <div className="flex flex-col gap-3 text-4xl sm:text-5xl md:text-7xl ">
+            <span className="font-poppins font-semibold text-[#eee] tracking-tighter">
               Got a project in
             </span>
-            <span className="font-poppins text-7xl font-semibold text-[#00adb5] tracking-tighter">
+            <span className="font-poppins font-semibold text-[#00adb5] tracking-tighter">
               mind?
             </span>
           </div>
           <img src={ContactForm} alt="form" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start h-[20rem] md:px-10 gap-5 z-[10]">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-5 md:px-10 gap-5 z-[10]">
           <div className="flex gap-4 w-full flex-col md:flex-row">
             <div className="flex flex-col gap-2 items-start w-full md:w-1/2">
               <span className="font-oswald text-white text-lg">Your Name:</span>

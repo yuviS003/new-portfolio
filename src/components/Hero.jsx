@@ -14,21 +14,25 @@ const Hero = () => {
         <div className="flex flex-col">
           <div className="font-poppins text-2xl sm:text-6xl md:text-8xl uppercase font-bold">
             <div className="text-[#EEEEEE]">
-              creative <br className="hidden sm:block"/> software
+              creative <br className="hidden sm:block" /> software
             </div>
             <div className="text-[#00ADB5]">developer</div>
           </div>
           <br />
-          <div className="flex gap-5 items-center sm:pl-3 text-[10px] sm:text-[18px]">
+          <div className="flex gap-5 items-center sm:pl-3 text-[14px] sm:text-[18px]">
+            <a href="#contact">
+              <button
+                type="button"
+                className="bg-[#393E46BF] px-3 sm:px-5 py-2 rounded-3xl cursor-pointer hover:shadow-black hover:shadow-lg transition"
+              >
+                <span className="font-poppins font-bold text-white">
+                  Hire me
+                </span>
+              </button>
+            </a>
             <button
               type="button"
-              className="bg-[#393E46BF] px-3 sm:px-5 py-2 rounded-3xl cursor-pointer hover:drop-shadow-xl transition"
-            >
-              <span className="font-poppins font-bold text-white">Hire me</span>
-            </button>
-            <button
-              type="button"
-              className="bg-[#00ADB5] px-3 sm:px-5 py-2 rounded-3xl cursor-pointer hover:drop-shadow-xl transition"
+              className="bg-[#00ADB5] px-3 sm:px-5 py-2 rounded-3xl cursor-pointer ho hover:shadow-black hover:shadow-lg transition"
             >
               <span className="font-poppins font-bold text-white">
                 Download Resume
