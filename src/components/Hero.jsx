@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex flex-col">
           <div className="font-poppins text-2xl sm:text-6xl md:text-8xl uppercase font-bold">
             <div className="text-[#EEEEEE]">
-              creative <br /> software
+              creative <br className="hidden sm:block"/> software
             </div>
             <div className="text-[#00ADB5]">developer</div>
           </div>
