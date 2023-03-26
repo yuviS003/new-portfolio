@@ -11,18 +11,24 @@ const Footer = () => {
   return (
     <div className="border-t-[1px] border-[#ededed1a] h-[300px] md:h-[350px] flex flex-col justify-center items-center gap-10">
       <div className="flex flex-col md:flex-row items-center gap-2 md:gap-10">
-        <div className="flex items-center gap-4 text-[#eee] font-poppins text-lg hover:text-[#00ADB5] cursor-pointer transition">
-          <BiHomeAlt />
-          Home
-        </div>
-        <div className="flex items-center gap-4 text-[#eee] font-poppins text-lg hover:text-[#00ADB5] cursor-pointer transition">
-          <AiOutlineUser />
-          About
-        </div>
-        <div className="flex items-center gap-4 text-[#eee] font-poppins text-lg hover:text-[#00ADB5] cursor-pointer transition">
-          <BsTelephone />
-          Contact
-        </div>
+        <a href="/">
+          <div className="flex items-center gap-4 text-[#eee] font-poppins text-lg hover:text-[#00ADB5] cursor-pointer transition">
+            <BiHomeAlt />
+            Home
+          </div>
+        </a>
+        <a href="#about">
+          <div className="flex items-center gap-4 text-[#eee] font-poppins text-lg hover:text-[#00ADB5] cursor-pointer transition">
+            <AiOutlineUser />
+            About
+          </div>
+        </a>
+        <a href="#contact">
+          <div className="flex items-center gap-4 text-[#eee] font-poppins text-lg hover:text-[#00ADB5] cursor-pointer transition">
+            <BsTelephone />
+            Contact
+          </div>
+        </a>
       </div>
       <div className="flex items-center gap-8 md:gap-20 text-[#eee] text-xl md:text-4xl">
         <VscGithubAlt

@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="sticky top-0 right-0 left-0 border-b-[1px] border-[#ededed1a] h-[100px] sm:h-[130px] z-[103] flex justify-between items-center  py-0 px-[10%] backdrop-blur-xl bg-[#222831]/30 ">
       <a
         href="/"
-        className="text-[#eee] font-oswald text-[1.5rem] font-semibold tracking-tighter"
+        className="text-[#eee] font-oswald text-[1.5rem] font-extrabold tracking-tighter"
       >
         YuvrajSingh
       </a>
