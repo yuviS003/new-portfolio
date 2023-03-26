@@ -12,6 +12,8 @@ import TripGuide from "./tripguide.png";
 import YT2 from "./yt2_clone.png";
 import GitHub from "./github.png";
 import Link from "./link.png";
+import ContactBG from "./contactBg.png";
+import ContactForm from "./form.png";
 
 export {
   arrow,
@@ -28,4 +30,6 @@ export {
   YT2,
   GitHub,
   Link,
+  ContactBG,
+  ContactForm,
 };
