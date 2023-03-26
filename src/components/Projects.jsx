@@ -5,35 +5,30 @@ import { projects } from "../constants";
 
 const Projects = () => {
   return (
-    <div id="project">
+    <div id="project" className="overflow-x-hidden">
       <div className="flex flex-col gap-5 items-start justify-center py-32">
-        <div className="flex flex-wrap gap-5 px-24 w-full">
-          <span className="font-poppins text-7xl font-semibold text-[#eee] tracking-tighter">
+        <div className="flex flex-wrap gap-3 md:gap-5 px-10 md:px-24 w-full text-4xl sm:text-5xl md:text-7xl">
+          <span className="font-poppins font-semibold text-[#eee] tracking-tighter">
             My recent
           </span>
-          <span className="font-poppins text-7xl font-semibold text-[#00adb5] tracking-tighter">
+          <span className="font-poppins font-semibold text-[#00adb5] tracking-tighter brightness-200">
             works
           </span>
         </div>
         <Carousel
           breakPoints={[
-            { width: 1, itemsToShow: 1 },
-            { width: 550, itemsToShow: 1 },
-            { width: 850, itemsToShow: 2 },
+            { width: 1, itemsToShow: 1, showArrows: false },
+            { width: 850, itemsToShow: 2, showArrows: true },
             { width: 1150, itemsToShow: 3 },
-            { width: 1450, itemsToShow: 3 },
-            { width: 1750, itemsToShow: 3 },
           ]}
-          pagination={false}
+          pagination={true}
           itemsToScroll={1}
           itemPadding={[0, 5]}
-          enableAutoPlay
-          autoPlaySpeed={6000}
           enableTilt={true}
           enableSwipe={true}
           enableMouseSwipe={true}
           showEmptySlots
-          className="px-5"
+          className="md:px-5"
         >
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />

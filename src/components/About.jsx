@@ -4,10 +4,10 @@ import { aboutBg, aboutDesk } from "../assets";
 const About = () => {
   return (
     <div id="about">
-      <div className="absolute md:left-[20rem] my-14">
-        <img src={aboutBg} alt="bg" className="object-cover" />
+      <div className="absolute left-[0] md:left-[20rem] my-14">
+        <img src={aboutBg} alt="bg" className="object-contain" />
       </div>
-      <div className="relative px-10 sm:px-16 md:px-28 py-32">
+      <div className="relative px-10 sm:px-16 md:px-28 py-20 md:py-32">
         <div className="flex justify-center items-center flex-col lg:flex-row gap-5">
           <div className="flex flex-col gap-5">
             <div className="flex flex-wrap gap-5">

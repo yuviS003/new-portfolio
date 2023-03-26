@@ -10,13 +10,13 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <div className="border border-gray-800 rounded-lg bg-gray-600 bg-opacity-60 p-3 font-oswald flex flex-col gap-4">
-      <div className="text-3xl font-bold text-white tracking-tighter w-full flex items-center justify-between">
+    <div className="border border-gray-800 rounded-lg bg-gray-600 bg-opacity-60 p-3 font-oswald flex flex-col gap-1 md:gap-4">
+      <div className="text-2xl md:text-3xl font-bold text-white tracking-tighter w-full flex items-center justify-between">
         {name}
         <div className="flex gap-2">
           {true ? (
             <div
-              className="bg-gradient-to-r from-neutral-100 via-cyan-100 to-sky-100 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-gradient-to-r from-neutral-100 via-cyan-100 to-sky-100 w-7 h-7 md:w-10 md:h-10 rounded-full flex justify-center items-center cursor-pointer"
               title="Checkout live"
               onClick={() => window.open(live_link, "_blank")}
             >
@@ -28,7 +28,7 @@ const ProjectCard = ({
             </div>
           ) : null}
           <div
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            className="black-gradient w-7 h-7 md:w-10 md:h-10 rounded-full flex justify-center items-center cursor-pointer"
             title="Checkout code"
             onClick={() => window.open(source_code_link, "_blank")}
           >
@@ -40,7 +40,7 @@ const ProjectCard = ({
           </div>
         </div>
       </div>
-      <div className="w-full h-[250px]">
+      <div className="w-full h-[150px] md:h-[250px]">
         <img
           src={image}
           alt={name}
@@ -48,7 +48,7 @@ const ProjectCard = ({
         />
       </div>
       <div
-        className="text-white tracking-tight leading-6 h-[180px] overflow-hidden"
+        className="text-white tracking-tight leading-6 h-[100px] md:h-[180px] overflow-hidden"
         title={description}
       >
         {description}
