@@ -3,7 +3,7 @@ import { Gericht } from "../assets";
 
 const ProjectCard = () => {
   return (
-    <div className="w-[24rem] h-[30rem] border border-gray-800 rounded-lg bg-gray-600 bg-opacity-60 p-3 font-oswald flex flex-col gap-4">
+    <div className="border border-gray-800 rounded-lg bg-gray-600 bg-opacity-60 p-3 font-oswald flex flex-col gap-4">
       <div className="text-3xl font-bold text-white tracking-tighter">
         Gericht
       </div>
