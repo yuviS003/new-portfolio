@@ -65,9 +65,15 @@ const Footer = () => {
         <div className="tracking-tight font-oswald font-semibold text-xl text-[#eee]">
           Developed By:
         </div>
-        <div className="tracking-tighter font-oswald font-semibold text-xl text-[#00ADB5] brightness-200">
-          Yuvraj
-        </div>
+        <a
+          href="https://github.com/yuviS003/new-portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="tracking-tighter font-oswald font-semibold text-xl text-[#00ADB5] brightness-200">
+            Yuvraj
+          </div>
+        </a>
       </div>
     </div>
   );
