@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center min-w-[20rem]">
         <img src={hero} alt="hero" className="object-cover" />
       </div>
     </div>
