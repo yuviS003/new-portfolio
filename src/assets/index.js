@@ -10,6 +10,8 @@ import NetflixClone from "./Netflix-clone.png";
 import RefineDashboard from "./refine-dashboard.png";
 import TripGuide from "./tripguide.png";
 import YT2 from "./yt2_clone.png";
+import GitHub from "./github.png";
+import Link from "./link.png";
 
 export {
   arrow,
@@ -24,4 +26,6 @@ export {
   RefineDashboard,
   TripGuide,
   YT2,
+  GitHub,
+  Link,
 };

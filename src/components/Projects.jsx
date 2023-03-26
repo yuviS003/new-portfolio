@@ -1,7 +1,7 @@
 import React from "react";
-import { projectBg } from "../assets";
 import ProjectCard from "./ProjectCard";
 import Carousel from "react-elastic-carousel";
+import { projects } from "../constants";
 
 const Projects = () => {
   return (
@@ -18,24 +18,26 @@ const Projects = () => {
         <Carousel
           breakPoints={[
             { width: 1, itemsToShow: 1 },
-            { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
+            { width: 550, itemsToShow: 1 },
             { width: 850, itemsToShow: 2 },
             { width: 1150, itemsToShow: 3 },
             { width: 1450, itemsToShow: 3 },
             { width: 1750, itemsToShow: 3 },
           ]}
+          pagination={false}
+          itemsToScroll={1}
           itemPadding={[0, 5]}
           enableAutoPlay
-          autoPlaySpeed={4000}
+          autoPlaySpeed={6000}
           enableTilt={true}
           enableSwipe={true}
           enableMouseSwipe={true}
           showEmptySlots
           className="px-5"
         >
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
         </Carousel>
       </div>
     </div>

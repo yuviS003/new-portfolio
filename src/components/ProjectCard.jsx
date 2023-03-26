@@ -1,23 +1,64 @@
 import React from "react";
-import { Gericht } from "../assets";
+import { GitHub, Link } from "../assets";
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  live_link,
+}) => {
   return (
     <div className="border border-gray-800 rounded-lg bg-gray-600 bg-opacity-60 p-3 font-oswald flex flex-col gap-4">
-      <div className="text-3xl font-bold text-white tracking-tighter">
-        Gericht
+      <div className="text-3xl font-bold text-white tracking-tighter w-full flex items-center justify-between">
+        {name}
+        <div className="flex gap-2">
+          {true ? (
+            <div
+              className="bg-gradient-to-r from-neutral-100 via-cyan-100 to-sky-100 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              title="Checkout live"
+              onClick={() => window.open(live_link, "_blank")}
+            >
+              <img
+                src={Link}
+                alt="link"
+                className="w-[80%] h-[80%] object-contain"
+              />
+            </div>
+          ) : null}
+          <div
+            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            title="Checkout code"
+            onClick={() => window.open(source_code_link, "_blank")}
+          >
+            <img
+              src={GitHub}
+              alt="github"
+              className="w-[75%] h-[75%] object-contain"
+            />
+          </div>
+        </div>
       </div>
-      <img src={Gericht} alt="gri" className="object-fill max-h-[40%]" />
-      <div className="text-white tracking-tight leading-6">
-        The sun was setting over the mountains, casting a warm glow over the
-        landscape. Birds sang in the trees as a gentle breeze blew through the
-        valley.As the sun dipped below the horizon, the sky turned a fiery red.
-        A flock of geese flew overhead, honking loudly. The air was filled with
-        the sweet scent of wildflowers.
+      <div className="w-full h-[250px]">
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover rounded-2xl"
+        />
+      </div>
+      <div
+        className="text-white tracking-tight leading-6 h-[180px] overflow-hidden"
+        title={description}
+      >
+        {description}
       </div>
       <div className="flex gap-3">
-        <span>#meta</span>
-        <span>#react</span>
+        {tags.map((tag, index) => (
+          <span key={index} className={`font-poppins ${tag.color}`}>
+            #{tag.name}
+          </span>
+        ))}
       </div>
     </div>
   );
