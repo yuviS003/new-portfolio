@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ContactBG, ContactForm } from "../assets";
 import { FiSend } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -8,6 +9,27 @@ const Contact = () => {
   const [query, setQuery] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name === "" || email === "" || query === "") {
+      alert("Fields are empty");
+    } else {
+      emailjs
+        .send(
+          "service_r65h5qs",
+          "template_2342ocl",
+          {
+            from_name: name,
+            to_name: "Yuvraj",
+            from_email: email,
+            to_email: "yuvi7860808034@gmail.com",
+            message: query,
+          },
+          "9Ka-4ajJeg2KC29Uu"
+        )
+        .then(() => {
+          alert("Thank you. I will get back to you as soon as possible");
+        })
+        .catch((err) => console.log(err));
+    }
   };
   return (
     <div id="contact">
@@ -30,7 +52,7 @@ const Contact = () => {
           </div>
           <img src={ContactForm} alt="form" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-5 md:px-10 gap-5 z-[10]">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-5 md:px-24 gap-5 z-[10]">
           <div className="flex gap-4 w-full flex-col md:flex-row">
             <div className="flex flex-col gap-2 items-start w-full md:w-1/2">
               <span className="font-oswald text-white text-lg">Your Name:</span>
