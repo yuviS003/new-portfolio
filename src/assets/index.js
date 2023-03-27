@@ -14,6 +14,7 @@ import GitHub from "./github.png";
 import Link from "./link.png";
 import ContactBG from "./contactBg.png";
 import ContactForm from "./form.png";
+import WebPortfolio from "./3d_portfolio.png";
 
 export {
   arrow,
@@ -32,4 +33,5 @@ export {
   Link,
   ContactBG,
   ContactForm,
+  WebPortfolio,
 };

@@ -5,6 +5,7 @@ import {
   NetflixClone,
   RefineDashboard,
   TripGuide,
+  WebPortfolio,
   YT2,
 } from "../assets";
 
@@ -162,5 +163,31 @@ export const projects = [
     image: Gericht,
     source_code_link: "https://github.com/yuviS003/modern-restaurant-ui",
     live_link: "https://modern-restaurant-ui.vercel.app/",
+  },
+  {
+    name: "3d Web Dev Portfolio",
+    description:
+      "Hi to all web developers out there! This right here is THE WEB DEVELOPER PORTFOLIO for you. It includes cool 3-D animations, reactive, responsive web design made just for you to attract recruiters. This application has a vivid section for showcasing your skills, experiences, projects and testimonials. ",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: WebPortfolio,
+    source_code_link: "https://github.com/yuviS003/3d_web_dev_portfolio",
+    live_link: "https://portfolio-yuvis003.vercel.app/",
   },
 ];

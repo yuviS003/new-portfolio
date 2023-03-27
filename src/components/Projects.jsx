@@ -18,7 +18,8 @@ const Projects = () => {
         <Carousel
           breakPoints={[
             { width: 1, itemsToShow: 1, showArrows: false },
-            { width: 850, itemsToShow: 2, showArrows: true },
+            { width: 500, itemsToShow: 2, showArrows: true },
+            { width: 850, itemsToShow: 2 },
             { width: 1150, itemsToShow: 3 },
           ]}
           pagination={true}
